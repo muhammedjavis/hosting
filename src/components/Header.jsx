@@ -15,7 +15,11 @@ const Header = () => {
         </div>
       </div>
       <div className={styles.activeCompany}>
-        <Button variant='contained' className={styles.whiteButton}>
+        <Button
+          variant='contained'
+          className={styles.whiteButton}
+          style={{ margin: '10px' }}
+        >
           <BusinessIcon className={styles.companyLogoIcon} />
           XYZ Enterprises Pvt Ltd
         </Button>
