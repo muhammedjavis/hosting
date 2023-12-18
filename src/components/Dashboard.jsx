@@ -39,7 +39,7 @@ const Dashboard = () => {
               className={activeButton === 'annual' ? classes.active : ''}
               onClick={() => handleButtonClick('annual')}
             >
-              Annual
+              Annually<sup>-10%</sup>
             </button>
           </div>
         </div>
