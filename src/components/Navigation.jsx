@@ -2,16 +2,21 @@ import { Button } from '@material-ui/core';
 import Avatar from '@material-ui/core/Avatar';
 import classes from './Navigation.module.css';
 import { NavLink, useLocation } from 'react-router-dom';
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import ExtensionIcon from '@mui/icons-material/Extension';
+import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
+import SupportAgentIcon from '@mui/icons-material/SupportAgent';
+import RedeemIcon from '@mui/icons-material/Redeem';
 
 const Navigation = () => {
   const location = useLocation();
 
   const navigationItems = [
-    { label: 'Dashboard', url: '/dashboard' },
-    { label: 'Perks', url: '#' },
-    { label: 'Addons', url: '#' },
-    { label: 'FAQ', url: '#' },
-    { label: 'Support', url: '#' },
+    { label: 'Dashboard', url: '/dashboard', icon: <DashboardIcon /> },
+    { label: 'Perks', url: '#', icon: <RedeemIcon /> },
+    { label: 'Addons', url: '#', icon: <ExtensionIcon /> },
+    { label: 'FAQ', url: '#', icon: <QuestionAnswerIcon /> },
+    { label: 'Support', url: '#', icon: <SupportAgentIcon /> },
   ];
 
   return (
@@ -45,6 +50,7 @@ const Navigation = () => {
               height: '100%',
               borderRadius: '0 10px 10px 0',
             }}
+            startIcon={item.icon}
           >
             {item.label}
           </Button>
