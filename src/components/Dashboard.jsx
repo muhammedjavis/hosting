@@ -43,7 +43,7 @@ const Dashboard = () => {
             </button>
           </div>
         </div>
-        <PlansGridContainer />
+        <PlansGridContainer activeButton={activeButton} />
         <Grid container spacing={2}>
           <PlanItemVariant
             title='Free Starter'
