@@ -8,6 +8,7 @@ import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import RedeemIcon from '@mui/icons-material/Redeem';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
 
 const Navigation = () => {
   const location = useLocation();
@@ -79,10 +80,11 @@ const Navigation = () => {
             height: '50px',
             textAlign: 'left',
             borderRadius: '0 10px 10px 0',
-
+            marginTop: '20px',
             marginLeft: '0',
             boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
           }}
+          endIcon={<PowerSettingsNewIcon />}
         >
           Logout
         </Button>
