@@ -1,6 +1,6 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import RootLayout from './components/RootLayout';
-import Dashboard from './components/Dashboard';
+import RootLayout from './components/Root/RootLayout';
+import Dashboard from './components/Dashboard/Dashboard';
 
 function App() {
   const router = createBrowserRouter([
@@ -24,11 +24,7 @@ function App() {
     },
   ]);
 
-  return (
-    <>
-      <RouterProvider router={router}></RouterProvider>
-    </>
-  );
+  return <RouterProvider router={router}></RouterProvider>;
 }
 
 export default App;
