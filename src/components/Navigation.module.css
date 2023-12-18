@@ -1,11 +1,11 @@
 .navigation {
   width: 225px;
-  height: 90vh;
+  height: 120vh;
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  position: absolute;
   box-sizing: border-box;
 }
 
@@ -30,6 +30,7 @@
 .userName {
   font-weight: bold;
   margin-bottom: 8px;
+  font-size: larger;
 }
 
 .userEmail {
@@ -38,4 +39,5 @@
 
 .logoutBtn {
   margin-top: auto;
+  margin-bottom: 10px;
 }

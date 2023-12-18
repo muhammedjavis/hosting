@@ -1,0 +1,21 @@
+.togglebuttons {
+  display: flex;
+  border: 2px solid;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.togglebuttons button {
+  padding: 10px 20px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.togglebuttons button.active {
+  background-color: lightblue;
+  color: white;
+  border: 2px solid;
+  border-radius: 20px;
+}

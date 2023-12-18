@@ -7,6 +7,7 @@ import ExtensionIcon from '@mui/icons-material/Extension';
 import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import RedeemIcon from '@mui/icons-material/Redeem';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const Navigation = () => {
   const location = useLocation();
@@ -23,8 +24,13 @@ const Navigation = () => {
     <div className={classes.navigation}>
       <div className={classes.userBox}>
         <Avatar alt='User Image' src='' className={classes.userImage} />
-        <div className={classes.userName}>User Name</div>
-        <div className={classes.userEmail}>user@example.com</div>
+        <div className={classes.userName}>
+          User Name
+          <NavLink to='#'>
+            <ArrowForwardIosIcon fontSize='small' />
+          </NavLink>
+        </div>
+        <div className={classes.userEmail}>user@test.com</div>
       </div>
       {navigationItems.map((item, index) => (
         <NavLink
@@ -73,7 +79,7 @@ const Navigation = () => {
             height: '50px',
             textAlign: 'left',
             borderRadius: '0 10px 10px 0',
-            marginTop: '50px',
+
             marginLeft: '0',
             boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
           }}
